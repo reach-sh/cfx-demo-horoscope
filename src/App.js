@@ -11,44 +11,26 @@ import * as rate from './reach/build/rate.main.mjs';
 import { loadStdlib } from '@reach-sh/stdlib';
 const reach = loadStdlib({ REACH_CONNECTOR_MODE: 'CFX', REACH_DEBUG: 'yes'});
 const { standardUnit } = reach;
-const defaults = { defaultFundAmt: '100', standardUnit };
-reach.setProviderByName('TestNet');
-
+const defaults = { standardUnit };
 
 class App extends React.Component {
-    
-    
     constructor(props) {
         super(props);
         this.state = { view: 'ConnectAccount', ...defaults };
     }
     async componentDidMount() {
-        const now = await reach.getNetworkTime();
-        reach.setQueryLowerBound(reach.sub(now, 500));
+        this.setState({ view: 'SelectNetwork' });
+    }
+    async selectNetwork(network) {
+        if (network) { reach.setProviderByName(network); }
         const acc = await reach.getDefaultAccount();
         acc.setGasLimit(5000000);
         acc.setStorageLimit(2048 * 8);
-        const balAtomic = await reach.balanceOf(acc);
-        const bal = reach.formatCurrency(balAtomic, 4);
-        this.setState({ acc, bal });
-        try {
-            const faucet = await reach.getFaucet();
-            this.setState({ view: 'FundAccount', faucet });
-        } catch (e) {
-            this.setState({ view: 'DeployerOrAttacher' });
-        }
+        this.setState({ view: 'DeployerOrAttacher', acc });
     }
-    async fundAccount(fundAmount) {
-        await reach.transfer(this.state.faucet, this.state.acc, reach.parseCurrency(fundAmount));
-        this.setState({ view: 'DeployerOrAttacher' });
-    }
-    async skipFundAccount() { this.setState({ view: 'DeployerOrAttacher' }); }
-
-
     selectOracle() { this.setState({ view: 'Wrapper', ContentView: Oracle, name: '星空：相遇之缘' }); }
     selectFirBuyer() { this.setState({ view: 'Wrapper', ContentView: FirBuyer, name: '星空：相遇之缘' }); }
     selectSecBuyer() { this.setState({ view: 'Wrapper', ContentView: SecBuyer, name: '星空：相遇之缘' }); }
-
     render() { return renderView(this, AppViews); }
 }
 
