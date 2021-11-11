@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cfx-demo-horoscope/static/css/main.004d73db.chunk.css",
-    "main.js": "/cfx-demo-horoscope/static/js/main.82899741.chunk.js",
-    "main.js.map": "/cfx-demo-horoscope/static/js/main.82899741.chunk.js.map",
+    "main.js": "/cfx-demo-horoscope/static/js/main.49d67ba5.chunk.js",
+    "main.js.map": "/cfx-demo-horoscope/static/js/main.49d67ba5.chunk.js.map",
     "runtime-main.js": "/cfx-demo-horoscope/static/js/runtime-main.e6f9b60e.js",
     "runtime-main.js.map": "/cfx-demo-horoscope/static/js/runtime-main.e6f9b60e.js.map",
     "static/js/2.e5cc6fc9.chunk.js": "/cfx-demo-horoscope/static/js/2.e5cc6fc9.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.e6f9b60e.js",
     "static/js/2.e5cc6fc9.chunk.js",
     "static/css/main.004d73db.chunk.css",
-    "static/js/main.82899741.chunk.js"
+    "static/js/main.49d67ba5.chunk.js"
   ]
 }
