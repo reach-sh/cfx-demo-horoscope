@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cfx-demo-horoscope/static/css/main.004d73db.chunk.css",
+    "main.js": "/cfx-demo-horoscope/static/js/main.82899741.chunk.js",
+    "main.js.map": "/cfx-demo-horoscope/static/js/main.82899741.chunk.js.map",
+    "runtime-main.js": "/cfx-demo-horoscope/static/js/runtime-main.e6f9b60e.js",
+    "runtime-main.js.map": "/cfx-demo-horoscope/static/js/runtime-main.e6f9b60e.js.map",
+    "static/js/2.e5cc6fc9.chunk.js": "/cfx-demo-horoscope/static/js/2.e5cc6fc9.chunk.js",
+    "static/js/2.e5cc6fc9.chunk.js.map": "/cfx-demo-horoscope/static/js/2.e5cc6fc9.chunk.js.map",
+    "static/js/3.872e5fe1.chunk.js": "/cfx-demo-horoscope/static/js/3.872e5fe1.chunk.js",
+    "static/js/3.872e5fe1.chunk.js.map": "/cfx-demo-horoscope/static/js/3.872e5fe1.chunk.js.map",
+    "index.html": "/cfx-demo-horoscope/index.html",
+    "static/css/main.004d73db.chunk.css.map": "/cfx-demo-horoscope/static/css/main.004d73db.chunk.css.map",
+    "static/js/2.e5cc6fc9.chunk.js.LICENSE.txt": "/cfx-demo-horoscope/static/js/2.e5cc6fc9.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/cfx-demo-horoscope/static/media/2.db9404ab.png",
+    "static/media/4.c1c9d986.jpg": "/cfx-demo-horoscope/static/media/4.c1c9d986.jpg",
+    "static/media/5.86266b77.jpg": "/cfx-demo-horoscope/static/media/5.86266b77.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e6f9b60e.js",
+    "static/js/2.e5cc6fc9.chunk.js",
+    "static/css/main.004d73db.chunk.css",
+    "static/js/main.82899741.chunk.js"
+  ]
+}
