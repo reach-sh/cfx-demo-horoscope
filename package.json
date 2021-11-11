@@ -14,9 +14,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "(cd src && ../reach compile) && react-scripts build",
+    "build": "npm run reach:compile-all && react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "reach:compile-buy": "./reach compile src/reach/buy.rsh",
+    "reach:compile-pair": "./reach compile src/reach/pair.rsh",
+    "reach:compile-rate": "./reach compile src/reach/rate.rsh",
+    "reach:compile-all": "npm run reach:compile-buy && npm run reach:compile-pair && npm run reach:compile-rate",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
